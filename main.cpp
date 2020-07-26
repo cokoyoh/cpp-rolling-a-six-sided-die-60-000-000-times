@@ -18,7 +18,7 @@ int main() {
 
     int face; // stores each role of the dice
 
-    for(unsigned int roll{1}; roll <= 60'000'000; roll++) {
+    for(unsigned int roll{1}; roll <= 60'000'000; roll++) { // Note the way 60'000'000 is written with a digit separator available since C++14
         face = 1 + rand() % 6;
 
         switch (face) {
